@@ -9,18 +9,25 @@
     <title>Bike Trail Tirol Beispiel</title>
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Leaflet -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
-    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
 
     <!-- Leaflet Providers -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-providers/1.13.0/leaflet-providers.min.js" integrity="sha512-5EYsvqNbFZ8HX60keFbe56Wr0Mq5J1RrA0KdVcfGDhnjnzIRsDrT/S3cxdzpVN2NGxAB9omgqnlh4/06TvWCMw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-providers/1.13.0/leaflet-providers.min.js"
+        integrity="sha512-5EYsvqNbFZ8HX60keFbe56Wr0Mq5J1RrA0KdVcfGDhnjnzIRsDrT/S3cxdzpVN2NGxAB9omgqnlh4/06TvWCMw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- Leaflet FullScreen -->
     <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
-    <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+    <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css'
+        rel='stylesheet' />
 
     <!-- eigene Stile und Hauptskript -->
     <link rel="stylesheet" href="main.css">
@@ -36,45 +43,68 @@
             </nav>
         </header>
         <article>
-            <h1><a href=""></a>todo:Titel eurer Etappe (z.B. Etappe 7: Scharnitz - Achensee)</h1>
-            <p>todo:Intro-Text eurer Etappenseite</p>
+            <h1><a href=""></a>Etappe 6: Ehrwald - Scharnitz</h1>
+            <p>Rund 1.000 Höhenmeter gilt es auf dieser 40 Kilometer langen Etappe zu überwinden außer, Sie legen
+                einen Teil der Strecke (400 Höhenmeter) mit der Ehrwalder Almbahn zurück. Belohnt wird diese als
+                mittelschwer eingestufte Etappe mit einer atemberaubenden Kulisse: Die Zugspitze präsentiert sich als
+                stete Begleiterin, ehe Sie am Tor zum Naturpark Karwendel stehen.</p>
 
             <div class="summary">
                 <div class="summary-badge">
-                    <i class="fas fa-walking"></i> todo:Länge km
+                    <i class="fas fa-walking"></i> 40 km
                 </div>
                 <div class="summary-badge">
-                    <i class="fas fa-clock"></i> todo:Fahrzeit h
+                    <i class="fas fa-clock"></i> 4 h
                 </div>
                 <div class="summary-badge">
-                    <i class="fas fa-sort-amount-up-alt"></i> todo:bergauf m
+                    <i class="fas fa-sort-amount-up-alt"></i> 990 m
                 </div>
                 <div class="summary-badge">
-                    <i class="fas fa-mountain"></i> todo:höchster Punkt m
+                    <i class="fas fa-mountain"></i> 1590 m
                 </div>
                 <div class="summary-badge">
-                    <i class="fas fa-sort-amount-down-alt"></i> todo:bergab m
+                    <i class="fas fa-sort-amount-down-alt"></i> 1020 m
                 </div>
                 <div class="summary-badge">
-                    <i class="fa-solid fa-heart-pulse"></i> todo:Schwierigkeit
+                    <i class="fa-solid fa-heart-pulse"></i> mittelschwierig
                 </div>
                 <div class="summary-badge">
-                    <i class="fas fa-download"></i> todo:Link GPX mit Label "Download GPX"
+                    <i class="fas fa-download"></i> <a href="data/etappe6.gpx">"Download GPX"</a>
                 </div>
             </div>
 
             <div id="map"></div>
 
             <h3>Streckenbeschreibung</h3>
-            <p>todo:Streckenbeschreibung eurer Etappenseite</p>
+            <p>Zunächst radelt man leicht ansteigend bis zur Talstation der Ehrwalder Almbahn. Von hier geht es immer
+                aufwärts auf der Route Nr. 813 bis zur Ehrwalder Alm (1,5h ab Ehrwald). Alternativ kann man die
+                Gondelbahn benutzen. Von der Ehrwalder Alm geht es weiter am Hauptweg aufwärts, in zwei Kehren zum
+                höchsten Punkt auf 1.600m Seehöhe. Kurz danach an der markanten Abzweigung zur Seeben Alm hält man sich
+                links Richtung Leutasch (551). Bei einem Abstecher zur Tillfussalm oder Gaistalalm wird man mit einem
+                eindrucksvollen Blick auf die steil abfallenden Nordwände der Mieminger Kette belohnt. Weiter geht es
+                auf dem Hauptweg durch das Gaistal, vorbei an der Mautstelle, bis in den Leutascher Ortsteil Klamm. Hier
+                radelt man über die Brücke nach Obern und orientiert sich am „Hotel Bergland“. Nun geht es über die
+                nächste Straße Richtung Leutasch Oberweidach (2h ab der Ehrwalder Alm). Der Weg führt bald in den Wald
+                und wieder überquert man eine Straße, danach fährt man links in einen Waldweg. Ab hier folgt man immer
+                den Schildern „539 Mooserweg Seepromenade“ bzw. „Leutasch Weidach“. Nach Passieren des Weidachsees
+                erreicht man die Hauptstraße. Dieser folgt man etwa 350 Meter und zweigt dann gleich wieder rechts ab
+                „541 Katzenkopf- Fluder“. Nun folgt ein Anstieg im Wald über 200 Höhenmeter und eine Abfahrt durchs
+                Fludertal bis zur Straße. Dieser folgt man kurz in nördlicher Richtung bis man auf die Straße nach
+                Scharnitz abzweigt. Kurz bevor man die Bundesstraße erreicht, zweigt man links in die Wiesen bei
+                Giessenbach ab und radelt die letzten Kilometer zum Etappenziel nach Scharnitz (1,5h ab Leutasch
+                Weidach).</p>
 
         </article>
         <footer>
             <strong>Datenquellen:</strong>
             <nav>
-                <a href="https://www.tirol.at/reisefuehrer/sport/mountainbiken/bike-trail-tirol">Bike Trail Tirol (Online Reiseführer Tirol)</a> |
-                todo:Link auf die Etappenseite eurer Etappe mit dem Linktext wie beim todo:Titel ganz oben |
-                <a href="https://www.data.gv.at/katalog/de/dataset/land-tirol_elektronischekartetirol">eGrundkarte Tirol</a>
+                <a href="https://www.tirol.at/reisefuehrer/sport/mountainbiken/bike-trail-tirol">Bike Trail Tirol
+                    (Online Reiseführer Tirol)</a> |
+                <a
+                    href="https://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-ehrwald-scharnitz">Etappe
+                    6: Ehrwald - Scharnitz</a> |
+                <a href="https://www.data.gv.at/katalog/de/dataset/land-tirol_elektronischekartetirol">eGrundkarte
+                    Tirol</a>
             </nav>
         </footer>
     </main>
