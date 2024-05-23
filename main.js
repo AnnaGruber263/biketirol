@@ -77,11 +77,15 @@ for (let etappe of ETAPPEN) {
 }
 
 pulldown.onchange = function (evt) {
-    console.log("Pulldown change event: ", evt);
-    console.log("User: ", evt.target.value);
     let username = evt.target.value;
     let url = `https://${username}.github.io/biketirol`;
-    console.log("Url: ", url);
-    console.log(window.location);
     window.location.href = url;
 }
+
+let osm2 = new L.TileLayer(
+    'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
+);
+
+new L.Control.MiniMap(osm2, {
+    toggleDisplay: true
+}).addTo(map);
